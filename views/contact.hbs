@@ -1,0 +1,21 @@
+<h2>Welcome to the contact page</h2>
+
+{{#each people as |value key|}}
+    <p>{{key}}: {{value}}</p>
+{{/each}}
+
+<hr>
+
+{{#each user as |value key|}}
+    <p>{{key}}: {{value}}</p>
+{{/each}}
+
+<hr>
+
+{{#each lists as |xValue xKey|}}
+    {{#each xValue.items as |yValue yKey|}}
+        <p>{{yValue}}</p>
+    {{/each}}
+{{/each}}
+
+<hr>

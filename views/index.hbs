@@ -1,0 +1,40 @@
+{{> header}}
+<h1>Welcome to my app using hbs</h1>
+{{#if isDisplayName}}
+    <button>My name is {{ name }}</button>
+    
+    {{else}}
+        <p>No name found</p>
+{{/if}}
+{{#if isAgeEnabled}}
+    <p>Age : {{age}}</p>
+    {{else}}
+        <p>No age provided</p>
+{{/if}}
+
+<p>Calculation helper</p>
+{{calculation 40}}
+{{calculation age}}
+
+<hr>
+
+{{#bigger title}}
+    {{test}}
+    {{prove}}
+{{/bigger}}
+
+<hr>
+
+{{#list people}}
+    {{firstName}} {{lastName}}
+{{/list}}
+
+<hr>
+{{!-- Handling cury brackets --}}
+<h1>Cury bracket</h1>
+{{ test }}
+{{{ test }}}
+
+{{> footer}}
+
+
